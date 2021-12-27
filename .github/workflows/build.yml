@@ -1,4 +1,4 @@
-name: CI CD Techmaster Wordpress
+name: CI CD Techmaster AWS
 on:
   push:
     branches: [ master ]
