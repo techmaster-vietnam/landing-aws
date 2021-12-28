@@ -5,8 +5,6 @@ ENV WDIR techmaster-aws
 
 WORKDIR /$WDIR
 
-RUN apk add upx
-
 COPY go.mod .
 
 COPY go.sum .
@@ -16,8 +14,6 @@ RUN go mod download
 COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-w'
-
-RUN upx -9 /$WDIR/landing-aws
 
 # final stage
 FROM alpine:latest
