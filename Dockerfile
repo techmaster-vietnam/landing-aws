@@ -1,9 +1,7 @@
 # build stage
 FROM golang:alpine AS build-env
 
-ENV WDIR techmaster-aws
-
-WORKDIR /$WDIR
+WORKDIR /
 
 RUN apk add upx
 
@@ -17,7 +15,7 @@ COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags '-w'
 
-RUN upx -9 /$WDIR/landing-aws
+RUN upx -9 /landing-aws
 
 # final stage
 FROM alpine:latest
@@ -29,8 +27,8 @@ RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 WORKDIR /app
 
 # Copy result binary go app to /app folder
-COPY --from=build-env techmaster-aws/landing-aws /app
-COPY --from=build-env techmaster-aws/dist/ /app/dist
+COPY --from=build-env /landing-aws /app
+COPY --from=build-env /dist/ /app/dist
 
 ENTRYPOINT ["./landing-aws"]
 
