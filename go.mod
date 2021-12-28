@@ -1,4 +1,4 @@
-module landing-wordpress
+module landing-aws
 
 go 1.17
 
