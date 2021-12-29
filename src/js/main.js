@@ -78,7 +78,6 @@ toggle_btn.forEach(function(btn){
     })
 })
 
-console.log(toggle_btn);
 
 function checkValid(name, phone, email) {
   let valid = true;
@@ -236,3 +235,23 @@ $(window).on("scroll", function () {
     }
   }
 });
+
+$(window).scroll(function() {
+  var scrollDistance = $(window).scrollTop();
+
+  // Show/hide menu on scroll
+  //if (scrollDistance >= 850) {
+  //		$('nav').fadeIn("fast");
+  //} else {
+  //		$('nav').fadeOut("fast");
+  //}
+
+  // Assign active class to nav links while scolling
+  $('.menu-section').each(function(i) {
+      if (($(this).position().top)<= scrollDistance) {
+          $('.nav_category a.active').removeClass('active');
+          $('.nav_category a').eq(i).addClass('active');
+      }
+  });
+}).scroll();
+

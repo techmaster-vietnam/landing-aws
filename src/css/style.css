@@ -24,7 +24,13 @@ a {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 20px 30px 20px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #d2f0ff;
+  width: 100%;
+  z-index: 100;
 }
 
 .header .nav_bar .nav_bar_container {
@@ -56,10 +62,20 @@ a {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .nav_bar .nav_bar_container .nav_menu .nav_category a {
   color: #000;
+}
+
+.header .nav_bar .nav_bar_container .nav_menu .active{
+  border-style: solid;
+  border-color: #000;
+  border-width: 0 0 2px 0;
+  padding: 0 0 0 0;
 }
 
 .header .nav_bar .menu_icon {
@@ -157,7 +173,7 @@ a {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 100px 30px 30px 30px;
 }
 
 .header .content .banner {
