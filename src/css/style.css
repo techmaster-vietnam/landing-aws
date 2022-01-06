@@ -179,7 +179,6 @@ a {
 .header .content .banner {
   width: 58%;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -200,6 +199,25 @@ a {
 
 
 .header .content .banner .description{
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.header .content .banner .description .item{
+  display: flex;
+  box-sizing: border-box;
+  margin-bottom: -0px;
+}
+
+.header .content .banner .description .item .icon{
+  width: 20px;
+}
+
+.header .content .banner .description .item .icon img{
+  width: 100%;
+}
+
+.header .content .banner .description .item .text{
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -207,9 +225,8 @@ a {
   line-height: 2.3rem;
   min-height: 50px;
   color: #000;
-  margin-top: 20px;
   box-sizing: border-box;
-  padding-right: 20%;
+  padding: 0 0 0px 20px;
 }
 
 .header .content .image {
@@ -413,6 +430,37 @@ a {
   text-align: left;
   line-height: 2.3rem;
   min-height: 50px;
+}
+
+.section .section_container .content .content_details .grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0px 0;
+}
+
+.section .section_container .content .content_details .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 40px 20px 0px;
+  font-size: 30px;
+}
+
+.section .section_container .content .content_details .grid-item .number{
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.section .section_container .content .content_details .grid-item .text{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  line-height: 2.3rem;
+  color: #000;
+  box-sizing: border-box;
+  padding: 0 0 0px 0px;
 }
 
 .section .section_container .content .content_details li {
