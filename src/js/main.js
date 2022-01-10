@@ -63,7 +63,6 @@ let toggle_btn = document.querySelectorAll(".toggle_btn");
 toggle_btn.forEach(function(btn){
     btn.addEventListener('click', function() {
         let course_info = this.parentElement.parentElement.querySelector(".course_info");
-        console.log(course_info);
         if(course_info.style.display == "block"){
             course_info.style.display = "none";
             this.querySelector("img").src = "img/down-arrow.svg"
@@ -78,6 +77,31 @@ toggle_btn.forEach(function(btn){
     })
 })
 
+
+let question_icon = document.querySelectorAll(".question_icon");
+
+question_icon.forEach(function(btn){
+    btn.addEventListener('click', function() {
+        let question_info = this.parentElement.parentElement.querySelector(".question_item");
+        if(question_info.style.display == "block"){
+          question_info.style.display = "none";
+            this.querySelector("img").src = "img/down-arrow.svg"
+            
+        }
+        else if(question_info.style.display == "none"){
+          question_info.style.display = "block";
+            this.querySelector("img").src = "img/up-arrow.svg"
+
+        }
+    })
+})
+
+console.log(question_icon);
+question_icon.forEach(function(btn){
+  question_icon.onclick = function(){
+        console.log("hi");
+    }
+})
 
 function checkValid(name, phone, email) {
   let valid = true;
@@ -254,4 +278,3 @@ $(window).scroll(function() {
       }
   });
 }).scroll();
-

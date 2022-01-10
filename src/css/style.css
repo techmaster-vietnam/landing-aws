@@ -227,6 +227,7 @@ a {
   color: #000;
   box-sizing: border-box;
   padding: 0 0 0px 20px;
+  width: calc(100% - 20px)
 }
 
 .header .content .image {
@@ -540,6 +541,23 @@ a {
   box-sizing: border-box;
   padding: 0 0 0 20px;
   width: calc(100% - 35px);
+}
+
+.learner .section_container .learner_banner{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 20px
+}
+
+.learner .section_container .learner_banner .banner_img{
+  width: 600px;
+}
+
+.learner .section_container .learner_banner .banner_img img{
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -1040,6 +1058,59 @@ a {
   .fee_container .fee .fee_content .fee_number {
     margin-bottom: 20px;
   }
+}
+
+
+.question_container{
+  display: block;
+  box-sizing: border-box;
+  padding: 40px 0px;
+}
+
+
+.question_item{
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgb(2 3 3 / 10%);
+  border-radius: 10px;
+  display: flex;
+  /* align-items: center;
+  justify-content: flex-start; */
+  box-sizing: border-box;
+  padding: 20px 30px;
+  margin: 0 0 30px 0;
+}
+
+.question_item .content{
+  width: calc(100% - 0px);
+  box-sizing: border-box;
+  /* padding-right: 20px; */
+}
+
+.question_item .content .question{
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  line-height: 2.3rem;
+}
+
+
+.question_item .content .answer{
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  line-height: 2.3rem;
+  padding-top: 20px;
+}
+
+.question_item .question_icon{
+  width: 20px;
+}
+
+.question_item .question_icon img{
+  width: 100%;
 }
 
 .product_container {
