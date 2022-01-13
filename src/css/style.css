@@ -30,7 +30,7 @@ a {
   left: 0;
   background-color: #d2f0ff;
   width: 100%;
-  z-index: 100;
+  z-index: 5;
 }
 
 .header .nav_bar .nav_bar_container {
@@ -95,7 +95,7 @@ a {
 
 .nav-bar {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   height: 100%;
   background-color: #eee;
   top: 0;
@@ -796,7 +796,7 @@ a {
 }
 
 .teacher_container .teacher {
-  width: calc(100% - 40px);
+  width: calc(33% - 40px);
   min-height: 240px;
   box-sizing: border-box;
   padding: 40px 20px 40px 20px;
@@ -807,7 +807,6 @@ a {
   align-items: flex-start;
   justify-content: left;
   min-height: 470px;
-  display: flex;
 }
 
 .teacher_container .teacher .teacher_img {
@@ -823,6 +822,20 @@ a {
 .teacher_container .teacher .teacher_img img {
   height: 100%;
   border-radius: 50%;
+}
+
+.teacher_container .teacher .cert_img {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher_container .teacher .cert_img img {
+  width: 100%;
 }
 
 .teacher_container .teacher .teacher_name {
@@ -843,35 +856,6 @@ a {
   text-align: left;
   line-height: 2.3rem;
 }
-
-.teacher_container .teacher {
-    width: calc(100%);
-    margin-bottom: 40px;
-    display: flex;
-    min-height: 0;
-    padding: 0;
-  }
-
-  .teacher .teacher_info {
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #f2f3f7;
-    padding: 40px 20px 40px 20px;
-    box-sizing: border-box;
-  }
-
-  .teacher_container .teacher .teacher_name {
-    margin-bottom: 0;
-  }
-
-  .teacher .teacher_details {
-    width: 65%;
-    padding: 40px 20px 40px 20px;
-    box-sizing: border-box;
-  }
 
 @media (max-width: 1024px) and (min-width: 641px) {
   .teacher_container .teacher {
@@ -911,6 +895,7 @@ a {
     min-height: 0px;
   }
 }
+
 
 .infographic_container{
   display: flex;

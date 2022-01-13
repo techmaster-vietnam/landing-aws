@@ -129,12 +129,12 @@
               <div class="text">Khoá học ngắn hạn tiết kiệm 8 tháng tự học, tăng tỷ lệ đỗ chứng chỉ AWS từ 40% lên 80%
               </div>
             </div>
-            <div class="item">
+            <!-- <div class="item">
               <div class="icon">
                 <img src="img/fee.png">
               </div>
               <div class="text">Học phí đã bao gồm chi phí thuê tài khoản AWS</div>
-            </div>
+            </div> -->
             <div class="item">
               <div class="icon">
                 <img src="img/file.png">
@@ -365,7 +365,7 @@
   <div class="section menu-section" id="course">
     <div class="display_container display_container">
       <div class="title">
-        Lộ trình học (16 buổi)
+        Lộ trình học (16 buổi * 3 tiếng)
       </div>
       <div class="course_content_container">
         <div class="course_content">
@@ -838,9 +838,13 @@
               <div class="teacher_info_container">
                 <div class="teacher_img">
                   <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/mr-hoa.png"
-                    alt="thầy giáo Hoà" />
+                    alt="giảng viên Nguyễn Hữu Hòa" />
                 </div>
                 <div class="teacher_name">Nguyễn Hữu Hòa</div>
+                <div class="cert_img">
+                  <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/cert-mr-dung.png"
+                    alt="cert thầy giáo Hoà" />
+                </div>
               </div>
             </div>
             <div class="teacher_details">
@@ -852,6 +856,56 @@
                 <li>
                   Hiện tại đang là Lead DevOps Engineer tại Viettel Digital, đơn vị chủ quản của dịch vụ Viettel Money.
                 </li>
+              </ul>
+            </div>
+          </div>
+          <div class="teacher">
+            <div class="teacher_info">
+              <div class="teacher_info_container">
+                <div class="teacher_img">
+                  <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/mr-tuan-anh.jpeg"
+                    alt="giảng viên Hồ Tuấn Anh" />
+                </div>
+                <div class="teacher_name">Hồ Tuấn Anh</div>
+                <div class="cert_img">
+                  <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/cert-mr-tuan-anh.png"
+                    alt="cert thầy giáo Tuấn Anh" />
+                </div>
+              </div>
+            </div>
+            <div class="teacher_details">
+              <ul>
+                <li>AWS Solution Architect tại OSAM (osam.io) doanh nghiệp chuyên tư vấn chuyển đổi dịch vụ lên Cloud
+                  AWS</li>
+                <li>Founder/CTO của Startup render video 3sFarm. Startup hỗ trợ Render cho các video được
+                  dựng trên các engine chuyên dụng (Blender, Maya, Cinema4D).
+                </li>
+                <li>Chứng chỉ: AWS SysOps on AWS, Google Cloud Architect Professional</li>
+              </ul>
+            </div>
+          </div>
+          <div class="teacher">
+            <div class="teacher_info">
+              <div class="teacher_info_container">
+                <div class="teacher_img">
+                  <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/mr-dung.jpeg"
+                    alt="giảng viên Đặng Anh Dũng" />
+                </div>
+                <div class="teacher_name">Đặng Anh Dũng</div>
+                <div class="cert_img">
+                  <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/cert-mr-dung.png"
+                    alt="cert thầy giáo Dũng" />
+                </div>
+              </div>
+            </div>
+            <div class="teacher_details">
+              <ul>
+                <li>5 năm kinh nghiệm với AWS với vai trò là DevOps Engineer triển khai và vận hành các dự án Global của
+                  Samsung Electronics</li>
+                <li>Cloud Solution Architect triển khai Hybrid Cloud và Multi-Cloud tại FPT Software
+                </li>
+                <li>DevOps Lead cho đơn vị thuộc khối Delivery tại FPT Software</li>
+                <li>Chứng chỉ: AWS Solution Architect Associate, CKA</li>
               </ul>
             </div>
           </div>
@@ -969,7 +1023,7 @@
               <div class="fee_number">
                 <div class="number">5.000.000</div>
                 <div class="condition">
-                  (cho 16 buổi học, học phí đã bao gồm chi phí thuê tài khoản AWS)
+                  (cho 16 buổi học, học phí chưa bao gồm chi phí thuê tài khoản AWS)
                 </div>
                 <!-- <div class="number">4.000.000</div>
                 <div class="condition">
@@ -990,7 +1044,7 @@
               <div class="fee_number">
                 <div class="number">4.500.000 </div>
                 <div class="condition">
-                  (cho 16 buổi học, học phí đã bao gồm chi phí thuê tài khoản AWS)
+                  (cho 16 buổi học, học phí chưa bao gồm chi phí thuê tài khoản AWS)
                 </div>
                 <!-- <div class="number">3.500.000</div>
                 <div class="condition">
@@ -1049,11 +1103,12 @@
         <div class="question_item">
           <div class="content">
             <div class="question">
-              Điều kiện thiết bị cho khoá học là gì?
+              Điều kiện thiết bị cho khoá học là gì? Chi phí thuê tài khoản AWS ra sao?
             </div>
             <div class="answer">
               Sinh viên nên có máy tính cài HĐH linux (Ubuntu, CentOS), RAM 8GB. Ổ cứng trống khoảng 1GB cho việc cài
-              một số công cụ
+              một số công cụ. Chi phí sẽ phát sinh trong quá trình làm Lab. Các bạn sẽ được hướng dẫn đặt cảnh báo khi
+              budget vượt quá ngưỡng. Thông thường chi phí cho cả khóa học rơi vào tầm 15$ ~ 20$.
             </div>
           </div>
           <!-- <div class="question_icon">
