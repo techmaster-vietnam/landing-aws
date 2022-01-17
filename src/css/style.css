@@ -824,6 +824,21 @@ a {
   border-radius: 50%;
 }
 
+.click-zoom input[type=checkbox] {
+  display: none
+}
+
+.click-zoom img {
+  /* margin: 100px; */
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out
+}
+
 .teacher_container .teacher .cert_img {
   width: 100%;
   box-sizing: border-box;
@@ -1353,7 +1368,7 @@ body.preventScroll {
 }
 
 #successModal-content {
-  background-color: #38a6f5;
+  background-color: #Ff9a00;
   width: 600px;
   padding: 15px;
   color: #fff;
