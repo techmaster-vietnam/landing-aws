@@ -790,13 +790,13 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 40px;
-  max-width: 1200px;
+  max-width: 1000px;
   /* justify-content: center;
   align-items: center; */
 }
 
 .teacher_container .teacher {
-  width: calc(33% - 40px);
+  width: calc(50% - 40px);
   min-height: 240px;
   box-sizing: border-box;
   padding: 40px 20px 40px 20px;
@@ -807,6 +807,7 @@ a {
   align-items: flex-start;
   justify-content: left;
   min-height: 470px;
+  margin-bottom: 40px;
 }
 
 .teacher_container .teacher .teacher_img {
@@ -849,8 +850,13 @@ a {
   justify-content: center;
 }
 
+.teacher_container .teacher .cert_img label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .teacher_container .teacher .cert_img img {
-  width: 100%;
+  width: 80%;
 }
 
 .teacher_container .teacher .teacher_name {
@@ -900,6 +906,10 @@ a {
     width: 65%;
     padding: 40px 20px 40px 20px;
     box-sizing: border-box;
+  }
+
+  .teacher_container .teacher .cert_img img {
+    width: 100%;
   }
 }
 
@@ -997,6 +1007,7 @@ a {
   font-size: 22px;
   margin-bottom: 20px;
   color: #000;
+  text-align: center;
 }
 
 .fee_container .fee .fee_content .fee_number {
@@ -1060,6 +1071,82 @@ a {
   }
 }
 
+
+.calendar_whole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.calendar_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 840px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.calendar_container .calendar {
+  position: relative;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  padding: 40px 40px 20px 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px rgb(2 3 3 / 10%);
+  box-shadow: 0 0 15px rgb(2 3 3 / 10%);
+  border-radius: 10px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.calendar_container .calendar .calendar_title {
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 40px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+
+}
+
+.calendar_container .calendar .calendar_content{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.calendar_container .calendar .calendar_content .icon{
+  width: 10%;
+}
+
+.calendar_container .calendar .calendar_content .icon img{
+  width: 100%;
+}
+
+.calendar_container .calendar .calendar_content .text{
+  width: 90%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+  line-height: 2.5rem;
+  margin-top: -10px;
+}
+
+
+@media (max-width: 768px) {
+  .calendar_container .calendar {
+    width: calc(100%);
+    margin-bottom: 40px;
+  }
+}
 
 .question_container{
   display: block;
