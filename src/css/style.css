@@ -679,19 +679,24 @@ a {
 }
 
 .display_container .course_content_container .course_content .track_container .track_content .title{
-  font-family: Alata;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: none;
   font-size: 20px;
   margin-bottom: 20px;
-  color: #Ff9a00;
+  color: #000;
   text-align: left;
   display: flex;
   justify-content: space-between;
+
+  
 }
 
 .display_container .course_content_container .course_content .track_container .track_content .title img{
   cursor: pointer;
   width: 10px;
+  display: none;
 }
 
 .display_container .course_content_container .course_content .track_container .track_content .list{
