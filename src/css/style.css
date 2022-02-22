@@ -883,6 +883,10 @@ a {
   line-height: 2.3rem;
 }
 
+.teacher_container .teacher .teacher_details ul{
+  margin-top: 20px;
+}
+
 .teacher_container .teacher .teacher_details li {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
