@@ -281,6 +281,7 @@ $(window).scroll(function() {
 }).scroll();
 
 
+
 var slideIndex = 1;
 
 let dot_bar = document.getElementById("dot_bar");
