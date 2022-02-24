@@ -61,6 +61,9 @@
             <a href="#intro">Giới thiệu</a>
           </div>
           <div class="nav_category">
+            <a href="#target">Đối tượng</a>
+          </div>
+          <div class="nav_category">
             <a href="#course">Lộ trình học</a>
           </div>
           <div class="nav_category">
@@ -68,6 +71,9 @@
           </div>
           <div class="nav_category">
             <a href="#fee">Học phí</a>
+          </div>
+          <div class="nav_category">
+            <a href="#teacher">Q&A</a>
           </div>
           <div class="nav_category">
             <a href="#contact">Liên hệ</a>
@@ -94,7 +100,7 @@
           <a href="#intro">Giới thiệu</a>
         </div>
         <div class="nav_category">
-          <a href="#target">Đối tượng học viên</a>
+          <a href="#target">Đối tượng</a>
         </div>
         <div class="nav_category">
           <a href="#course">Lộ trình học</a>
@@ -104,6 +110,9 @@
         </div>
         <div class="nav_category">
           <a href="#teacher">Giảng viên</a>
+        </div>
+        <div class="nav_category">
+          <a href="#question">Q&A</a>
         </div>
         <div class="nav_category">
           <a href="#contact">Liên hệ</a>
@@ -125,45 +134,15 @@
         <div class="banner">
           <img width="255" height="183" class="lazyload lazyload-img" data-src="img/banner2.svg" alt="banner" />
           <div class="description">
-            <div class="item">
-              <div class="icon">
-                <img src="img/content_2.png">
-              </div>
-              <div class="text">Nội dung học bao gồm 2 chứng chỉ Solution Architect và Developer
-              </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <img src="img/time.png">
-              </div>
-              <div class="text">Khoá học ngắn hạn 30 buổi - 3 tháng, tiết kiệm 1 năm tự học, tăng tỷ lệ đỗ chứng chỉ AWS từ 40% lên 80%
-              </div>
-            </div>
-            <!-- <div class="item">
-              <div class="icon">
-                <img src="img/fee.png">
-              </div>
-              <div class="text">Học phí đã bao gồm chi phí thuê tài khoản AWS</div>
-            </div> -->
-            <div class="item">
-              <div class="icon">
-                <img src="img/file.png">
-              </div>
-              <div class="text">Hơn 100 video + bài thực hành thực tế
-              </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <img src="img/grade.png">
-              </div>
-              <div class="text">600 câu hỏi luyện thi AWS tiếng Anh tích hợp trong từng buổi học </div>
-            </div>
-            <div class="item">
-              <div class="icon">
-                <img src="img/network.png">
-              </div>
-              <div class="text">Môi trường học năng động, đa chiều hỏi đáp với giảng viên và nhiều bạn học từ các công ty đang sử dụng AWS.</div>
-            </div>
+            <ul>
+              <li class="text">Nội dung học bao gồm 2 chứng chỉ Solution Architect và Developer</li>
+              <li class="text">Khoá học ngắn hạn 30 buổi - 3 tháng, tiết kiệm 1 năm tự học, tăng tỷ lệ đỗ chứng chỉ AWS
+                từ 40% lên 80%</li>
+              <li class="text">Hơn 100 video + bài thực hành thực tế</li>
+              <li class="text">600 câu hỏi luyện thi AWS tiếng Anh tích hợp trong từng buổi học</li>
+              <li class="text">Môi trường học năng động, đa chiều hỏi đáp với giảng viên và nhiều bạn học từ các công ty
+                đang sử dụng AWS.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -208,10 +187,51 @@
     </div>
   </div> -->
 
-  <div class="target section" id="summary">
-    <div class="section_container">
-      <div class="intro_image image">
+  <div class="target section menu-section" id="target">
+    <div class="section_container" style="align-items: flex-start;">
+      <!-- <div class="intro_image image">
         <img class="lazyload lazyload-img" width="286" height="284" data-src="img/target2.png" alt="doituong" />
+      </div> -->
+      <div class="intro_image content">
+        <div class="content_section_container">
+          <div class="content_header">Yêu cầu đầu vào </div>
+          <div class="content_details">
+            <div class="grid-container">
+              <div class="grid-item">
+                <div class="number">
+                  01
+                </div>
+                <div class="text">
+                  Đọc hiểu tiếng Anh nếu muốn thi chứng chỉ
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="number">
+                  02
+                </div>
+                <div class="text">
+                  Đã lập trình một ngôn ngữ bất kỳ, nếu lập trình web back end + SQL
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="number">
+                  03
+                </div>
+                <div class="text">
+                  Biết một số tập lệnh Linux căn bản, remote SSH
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="number">
+                  04
+                </div>
+                <div class="text">
+                  Nắm căn bản về network: TCP/IP, HTTP, DNS...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="intro_content content">
         <div class="content_section_container">
@@ -231,7 +251,7 @@
                 Chuyên viên DevOps
               </li>
               <li>
-                System Admin (cần tự bổ xung kỹ năng lập trình Python căn bản) 
+                System Admin (cần tự bổ xung kỹ năng lập trình Python căn bản)
               </li>
             </ul>
           </div>
@@ -240,7 +260,7 @@
     </div>
   </div>
 
-  <div class="intro section menu-section" id="target">
+  <div class="intro section" id="target" style="display: none;">
     <div class="section_container">
       <div class="intro_image image">
         <picture>
@@ -282,7 +302,7 @@
                   04
                 </div>
                 <div class="text">
-                  Nắm căn bản về network: TCP/IP, HTTP, DNS... 
+                  Nắm căn bản về network: TCP/IP, HTTP, DNS...
                 </div>
               </div>
             </div>
@@ -292,8 +312,64 @@
     </div>
   </div>
 
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
 
-<!-- 
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides ">
+      <div class="numbertext">1 / 7</div>
+      <img src="img/slide/0.jpg" style="width:100%">
+      <!-- <div class="slide_text">Caption Text</div> -->
+    </div>
+
+    <div class="mySlides ">
+      <div class="numbertext">2 / 7</div>
+      <img src="img/slide/1.jpeg" style="width:100%">
+      <!-- <div class="slide_text">Caption Two</div> -->
+    </div>
+
+    <div class="mySlides ">
+      <div class="numbertext">3 / 7</div>
+      <img src="img/slide/2.jpg" style="width:100%">
+      <!-- <div class="slide_text">Caption Three</div> -->
+    </div>
+
+    <div class="mySlides ">
+      <div class="numbertext">4 / 7</div>
+      <img src="img/slide/3.jpg" style="width:100%">
+      <!-- <div class="slide_text">Caption Three</div> -->
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">5 / 7</div>
+      <img src="img/slide/4.jpg" style="width:100%">
+      <!-- <div class="slide_text">Caption Three</div> -->
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">6 / 7</div>
+      <img src="img/slide/5.jpg" style="width:100%">
+      <!-- <div class="slide_text">Caption Three</div> -->
+    </div>
+    <div class="mySlides ">
+      <div class="numbertext">7 / 7</div>
+      <img src="img/slide/6.jpg" style="width:100%">
+      <!-- <div class="slide_text">Caption Three</div> -->
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" id="prev_btn">&#10094;</a>
+    <a class="next" id="next_btn">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center" id="dot_bar">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <!-- 
   <div class="learner section" id="learner">
     <div class="section_container">
       <div class="title">
@@ -390,7 +466,7 @@
       </div>
       <div class="course_content_container">
         <div class="course_banner">
-            <img src="img/content.png" style = "width: 100%; margin-bottom: 20px;">
+          <img src="img/content.png" style="width: 100%; margin-bottom: 20px;">
         </div>
         <div class="course_content">
           <div class="triangle">
@@ -398,7 +474,7 @@
           <div class="track_container">
             <div class="track_content">
               <div class="title">
-                <span>Buổi 1: AWS Intro, IAM, S3</span>
+                <span>Buổi 1: Điện toán đám mây - AWS Web Service</span>
                 <span class="toggle_btn">
                   <img src="img/up-arrow.svg">
                 </span>
@@ -871,8 +947,8 @@
                     alt="giảng viên Nguyễn Hữu Hòa" />
                 </div>
                 <div class="teacher_name">Nguyễn Hàn Duy</div>
-                <div class = "teacher_position">System Engineer tại CMC Global</div>
-    
+                <div class="teacher_position">System Engineer tại CMC Global</div>
+
               </div>
             </div>
             <div class="teacher_details">
@@ -896,7 +972,7 @@
                     alt="giảng viên Hồ Tuấn Anh" />
                 </div>
                 <div class="teacher_name">Đào Ngọc Lâm</div>
-                <div class = "teacher_position">Cloud Engineer tại Viettel</div>
+                <div class="teacher_position">Cloud Engineer tại Viettel</div>
                 <!-- <div class="click-zoom cert_img">
                   <label>
                     <input type="checkbox">
@@ -917,8 +993,8 @@
               <div class="click-zoom cert_img">
                 <label>
                   <input type="checkbox">
-                  <img class="lazyload lazyload-img" width="90" height="90"
-                    data-src="img/teachers/cert-mr-lam.jpeg" alt="cert thầy giáo Lâm" />
+                  <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/cert-mr-lam.jpeg"
+                    alt="cert thầy giáo Lâm" />
                 </label>
               </div>
             </div>
@@ -931,8 +1007,8 @@
                     alt="giảng viên Đặng Anh Dũng" />
                 </div>
                 <div class="teacher_name">Đinh Lê Hoàng</div>
-                <div class = "teacher_position">DevOps Engineer tại IFI Solutions</div>
-             
+                <div class="teacher_position">DevOps Engineer tại IFI Solutions</div>
+
                 <!-- <div class="cert_img">
                   <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/cert-mr-dung.png"
                     alt="cert thầy giáo Dũng" />
@@ -963,8 +1039,8 @@
                     alt="giảng viên Đặng Anh Dũng" />
                 </div>
                 <div class="teacher_name">Trịnh Minh Cường</div>
-                <div class = "teacher_position">CTO tại Techmaster</div>
-      
+                <div class="teacher_position">CTO tại Techmaster</div>
+
                 <!-- <div class="cert_img">
                   <img class="lazyload lazyload-img" width="90" height="90" data-src="img/teachers/cert-mr-dung.png"
                     alt="cert thầy giáo Dũng" />
@@ -981,7 +1057,8 @@
               </div> -->
               <ul>
                 <li>Trên 25 năm kinh nghiệm, Microsoft Technology Evangelist</li>
-                <li>Đã từng làm việc tại Microsoft Vietnam, HarveyNash Vietnam, Fujitsu Vietnam, Trivision và Pacific R.I.M
+                <li>Đã từng làm việc tại Microsoft Vietnam, HarveyNash Vietnam, Fujitsu Vietnam, Trivision và Pacific
+                  R.I.M
                 </li>
               </ul>
             </div>
@@ -1166,7 +1243,7 @@
               <div class="fee_title">HỌC VIÊN TECHMASTER CŨ</div>
               <div class="fee_number">
                 <div class="number">4.500.000 </div>
-                <div class="condition" style = "font-size: 16px">
+                <div class="condition" style="font-size: 16px">
                   (áp dụng cho khoá Web Frontend, DevOps, Springboots - học phí chưa bao gồm chi phí thuê tài khoản AWS)
                 </div>
                 <!-- <div class="number">3.500.000</div>
@@ -1186,61 +1263,65 @@
     </div>
   </div>
 
-  <div class="section menu-section" id="calendar">
+  <div class="section" id="calendar">
     <div class="display_container">
       <div class="title">Thời gian & Địa điểm</div>
       <div class="calendar_whole">
-        <div class = "calendar_container">
-          <div class = "calendar">
-            <div class = "calendar_title">
+        <div class="calendar_container">
+          <div class="calendar">
+            <div class="calendar_title">
               Lớp Thứ 2-4-6
             </div>
-            <div class = "calendar_content">
-              <div class = "icon">
-                <img src = "img/time.png">
+            <div class="calendar_content">
+              <div class="icon">
+                <img src="img/time.png">
               </div>
-              <div class = "text">
+              <div class="text">
                 Khai giảng: 14/3/2022
                 <br>
                 18:30 - 21:30
               </div>
             </div>
-            <div class = "calendar_content">
-              <div class = "icon">
-                <img src = "img/location2.svg">
+            <div class="calendar_content">
+              <div class="icon">
+                <img src="img/location2.svg">
               </div>
-              <div class = "text">
-                <a class="customLink" href="https://www.google.com/maps/place/48+P.+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.998029,105.7924504,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391?hl=vi-VN" target="_blank">Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48,
-                  Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</a>                
+              <div class="text">
+                <a class="customLink"
+                  href="https://www.google.com/maps/place/48+P.+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.998029,105.7924504,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391?hl=vi-VN"
+                  target="_blank">Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48,
+                  Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</a>
               </div>
             </div>
           </div>
-          <div class = "calendar">
-            <div class = "calendar_title">
+          <div class="calendar">
+            <div class="calendar_title">
               Lớp Thứ 3-5-7
             </div>
-            <div class = "calendar_content">
-              <div class = "icon">
-                <img src = "img/time.png">
+            <div class="calendar_content">
+              <div class="icon">
+                <img src="img/time.png">
               </div>
-              <div class = "text">
+              <div class="text">
                 Khai giảng: 14/3/2022
                 <br>
                 18:30 - 21:30
               </div>
             </div>
-            <div class = "calendar_content">
-              <div class = "icon">
-                <img src = "img/location2.svg">
+            <div class="calendar_content">
+              <div class="icon">
+                <img src="img/location2.svg">
               </div>
-              <div class = "text">
-                <a class="customLink" href="https://www.google.com/maps/place/Techmaster/@21.013604,105.8443263,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8ea079c829:0x1a3ebe79efa873b2!8m2!3d21.013604!4d105.846515?hl=vi-VN" target="_blank">Cơ sở Nguyễn Đình Chiểu: Số 14, ngõ 4, Nguyễn Đình
+              <div class="text">
+                <a class="customLink"
+                  href="https://www.google.com/maps/place/Techmaster/@21.013604,105.8443263,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8ea079c829:0x1a3ebe79efa873b2!8m2!3d21.013604!4d105.846515?hl=vi-VN"
+                  target="_blank">Cơ sở Nguyễn Đình Chiểu: Số 14, ngõ 4, Nguyễn Đình
                   Chiểu, Hà Nội</a>
-                
+
               </div>
             </div>
           </div>
-         
+
         </div>
       </div>
     </div>
@@ -1256,9 +1337,12 @@
               Chi phí sử dụng AWS có đắt hay không?
             </div>
             <div class="answer">
-              Ở những tính năng căn bản tối thiểu thì AWS đắt hơn hosting VPS - Virtual Cloud. Tuy nhiên khi phát triển hệ thống microservice, high availability hoặc nhu cầu sử dụng biến động thì AWS có nhiều ưu thế mà mô hình hosting truyền thông không thể có hoặc nếu làm được tương tự sẽ tốn kém rất nhiều nhân lực chuyên gia.
+              Ở những tính năng căn bản tối thiểu thì AWS đắt hơn hosting VPS - Virtual Cloud. Tuy nhiên khi phát triển
+              hệ thống microservice, high availability hoặc nhu cầu sử dụng biến động thì AWS có nhiều ưu thế mà mô hình
+              hosting truyền thông không thể có hoặc nếu làm được tương tự sẽ tốn kém rất nhiều nhân lực chuyên gia.
               <br>
-              Với người mới học, AWS cho dùng 1 năm miễn phí một số dịch vụ căn bản. Nếu sử dụng thêm và kiểm soát chi phí tốt thì mỗi tháng mất khoảng 5 USD tương đương cỡ 120,000 VND.
+              Với người mới học, AWS cho dùng 1 năm miễn phí một số dịch vụ căn bản. Nếu sử dụng thêm và kiểm soát chi
+              phí tốt thì mỗi tháng mất khoảng 5 USD tương đương cỡ 120,000 VND.
             </div>
           </div>
         </div>
@@ -1271,7 +1355,8 @@
             <div class="answer">
               SAA: nội dung thi cover gần như tất cả service
               <br>
-              DEV: nội dung thi tập trung vào các service phục vụ quá trình deploy ứng dụng (codebuild, codecommit, beanstalk, codepipeline, codedeploy)
+              DEV: nội dung thi tập trung vào các service phục vụ quá trình deploy ứng dụng (codebuild, codecommit,
+              beanstalk, codepipeline, codedeploy)
               <br>
               SAA: phù hợp với role thiết kế/tối ưu hệ thống, tối ưu cost
               <br>
@@ -1288,9 +1373,11 @@
               Tại sao khoá học không hướng dẫn lập trình AWS bằng các ngôn ngữ khác như Java, C#, Javascript?
             </div>
             <div class="answer">
-              AWS SDK hỗ trợ rất nhiều ngôn ngữ. Tuy nhiên SDK Python luôn được cập nhật mới nhất. AWS CLI được viết bằng Python. Python cũng là ngôn ngữ lập trình dễ học và phổ biến nhất hiện nay.
+              AWS SDK hỗ trợ rất nhiều ngôn ngữ. Tuy nhiên SDK Python luôn được cập nhật mới nhất. AWS CLI được viết
+              bằng Python. Python cũng là ngôn ngữ lập trình dễ học và phổ biến nhất hiện nay.
               <br>
-              Nếu bạn đã vững Python hoàn toàn chuyển sang các ngôn ngữ lập trình khác như Java, C#, Javascript, Kotlin...
+              Nếu bạn đã vững Python hoàn toàn chuyển sang các ngôn ngữ lập trình khác như Java, C#, Javascript,
+              Kotlin...
             </div>
           </div>
         </div>
@@ -1301,7 +1388,8 @@
               Học xong khoá học này có thi chứng chỉ ngay được không?
             </div>
             <div class="answer">
-              Kể cả khi bạn tham gia đầy đủ các buổi học, thực hành lab, bạn vẫn cần tập trung ôn thi bộ đề luyện thi khoảng 2-3 tuần trước khi đi thi để đảm bảo đạt kết quả tốt.
+              Kể cả khi bạn tham gia đầy đủ các buổi học, thực hành lab, bạn vẫn cần tập trung ôn thi bộ đề luyện thi
+              khoảng 2-3 tuần trước khi đi thi để đảm bảo đạt kết quả tốt.
             </div>
           </div>
         </div>
@@ -1309,10 +1397,12 @@
         <div class="question_item">
           <div class="content">
             <div class="question">
-              Chi phí thi chứng chỉ AWS? Số lượng câu hỏi, hình thức thi, điểm tối thiểu để đạt? Thời gian hiệu lực của chứng chỉ?
+              Chi phí thi chứng chỉ AWS? Số lượng câu hỏi, hình thức thi, điểm tối thiểu để đạt? Thời gian hiệu lực của
+              chứng chỉ?
             </div>
             <div class="answer">
-              Chi phí 150 usd, 65 câu, 130 phút, có thể xin thêm 30p do mình không sử dụng Tiếng Anh làm ngôn ngữ chính. Điểm tối thiểu để pass là 72% và có hiệu lực trong 2 năm. Có thể thi ở trung tâm hoặc tại nhà
+              Chi phí 150 usd, 65 câu, 130 phút, có thể xin thêm 30p do mình không sử dụng Tiếng Anh làm ngôn ngữ chính.
+              Điểm tối thiểu để pass là 72% và có hiệu lực trong 2 năm. Có thể thi ở trung tâm hoặc tại nhà
             </div>
           </div>
         </div>
@@ -1334,9 +1424,11 @@
               Cơ hội việc làm sau khi hoàn thành khoá học này?
             </div>
             <div class="answer">
-              Rất nhiều công ty Nhật, gia công cho Nhật và start up ở Việt nam đang sử dụng AWS. Nhu cầu tuyển dụng rất lớn.
+              Rất nhiều công ty Nhật, gia công cho Nhật và start up ở Việt nam đang sử dụng AWS. Nhu cầu tuyển dụng rất
+              lớn.
               <br>
-              Hãy ưu tiên thực hành càng nhiều càng tốt. Việc ôn thi chứng chỉ thực ra không quá khó khi bạn luyện thi với bộ đề. Chắc chắn bạn sẽ xin được việc với mức lương khoảng 15 triệu/tháng.              
+              Hãy ưu tiên thực hành càng nhiều càng tốt. Việc ôn thi chứng chỉ thực ra không quá khó khi bạn luyện thi
+              với bộ đề. Chắc chắn bạn sẽ xin được việc với mức lương khoảng 15 triệu/tháng.
             </div>
           </div>
         </div>
@@ -1347,7 +1439,8 @@
               Khoá học này có cấp chứng chỉ?
             </div>
             <div class="answer">
-              Techmaster cấp chứng chỉ hoàn thành khoá học. Còn chứng chỉ do Amazon cấp thì bạn cần phải luyện thi và thi đỗ.
+              Techmaster cấp chứng chỉ hoàn thành khoá học. Còn chứng chỉ do Amazon cấp thì bạn cần phải luyện thi và
+              thi đỗ.
             </div>
           </div>
         </div>
@@ -1358,7 +1451,8 @@
               AWS đã đặt máy chủ ở Việt nam chưa?
             </div>
             <div class="answer">
-              Từ 2022, AWS triển khai hệ thống máy chủ tại Hà nội. Thời gian ping dưới 5 mili giây. Việt nam là trọng điểm ưu tiên phát triển thị trường của Amazon.
+              Từ 2022, AWS triển khai hệ thống máy chủ tại Hà nội. Thời gian ping dưới 5 mili giây. Việt nam là trọng
+              điểm ưu tiên phát triển thị trường của Amazon.
             </div>
           </div>
         </div>
@@ -1366,7 +1460,8 @@
         <div class="question_item">
           <div class="content">
             <div class="question">
-              Tôi muốn đưa một dự án web site hosting trong VPS lên AWS thì làm thế nào? Khoá học này có giúp tôi làm việc đó hay không?
+              Tôi muốn đưa một dự án web site hosting trong VPS lên AWS thì làm thế nào? Khoá học này có giúp tôi làm
+              việc đó hay không?
             </div>
             <div class="answer">
               Khoá học này có rất nhiều bài lab thực hành để bạn làm điều đó.
@@ -1380,7 +1475,9 @@
               Đây là khoá luyện thi chứng chỉ hay là khoá thực hành lab?
             </div>
             <div class="answer">
-              
+              Đây là khoá học ưu tiên thực hành lab để sinh viên có thể vào dự án AWS trực tiếp. Trong mỗi buổi học sẽ
+              có nhiều câu hỏi trắc nghiệm liên quan để sinh viên tự ôn thi chứng chỉ AWS. Sau khoá học, sinh viên cần
+              dành ra 4 tuần mỗi ngày 120 phút để luyện thi bộ đề để thi chứng chỉ.
             </div>
           </div>
         </div>
