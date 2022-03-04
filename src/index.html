@@ -51,7 +51,7 @@
         <div class="logo">
           <a href="https://techmaster.vn/" target="_blank">
             <picture>
-              <source data-srcset="img/logo.png" />
+              <source data-srcset="img/logo-white.png" />
               <img width="130" height="30" class="lazyload lazyload-img" data-src="img/logo-white-min.png" alt="logo" />
             </picture>
           </a>
@@ -125,9 +125,9 @@
       <div class="content_container">
         <div class="image">
           <picture>
-            <source data-srcset="img/aws_banner.png" media="(min-width: 1366px)" />
-            <source data-srcset="img/aws_banner.png" media="(max-width: 1365px)" />
-            <img width="255" height="293" data-src="img/aws_banner.png" alt="amazon web service"
+            <source data-srcset="img/banner_cloud.png" media="(min-width: 1366px)" />
+            <source data-srcset="img/banner_cloud.png" media="(max-width: 1365px)" />
+            <img width="255" height="293" data-src="img/banner_cloud.png" alt="amazon web service"
               class="lazyload lazyload-img" />
           </picture>
         </div>
@@ -138,7 +138,7 @@
               <li class="text">Nội dung học bao gồm 2 chứng chỉ Solution Architect và Developer</li>
               <li class="text">Khoá học 3 tháng, tiết kiệm 1 năm tự học, tăng tỷ lệ đỗ chứng chỉ AWS
                 từ 40% lên 80%</li>
-              <li class="text">Hơn 120 video + bài thực hành thực tế</li>
+              <li class="text">Hơn 120 video + bài thực hành thực tế trên các ngôn ngữ Python, Java, Golang</li>
               <li class="text">600 câu hỏi luyện thi AWS tiếng Anh tích hợp trong từng buổi học</li>
               <li class="text">Môi trường học năng động, đa chiều hỏi đáp với giảng viên và nhiều bạn học từ các công ty
                 đang sử dụng AWS.</li>
@@ -390,8 +390,8 @@
 
 
   
-  <div class="learner section" id="learner">
-    <div class="section_container">
+  <div class="learner section" id="learner" >
+    <div class="section_container" style = "padding: 0 2.5%">
       <div class="title">
         Nội dung
       </div>
@@ -461,7 +461,32 @@
     </div>
   </div>
 
+  <div class="section" id="video">
+    <div class="display_container">
+      <div class="title">Video khóa học</div>
+      <div class="video_container"> 
 
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jtirdhB1PnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://youtu.be/jtirdhB1PnI">
+                        <div class="video_name">
+                          AWS: Cấp quyền list, put object lên S3
+
+                        </div>
+                    </a>
+                </div>
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/_-ngDj1yvjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://youtu.be/_-ngDj1yvjI">
+                        <div class="video_name">
+                          AWS: Hosting static web site lên S3
+                        </div>
+                    </a>
+                </div> 
+
+      </div>
+    </div>
+  </div>
 
 
   <!-- <div class="material section" id="">
@@ -1405,14 +1430,10 @@
         <div class="question_item">
           <div class="content">
             <div class="question">
-              Tại sao khoá học không hướng dẫn lập trình AWS bằng các ngôn ngữ khác như Java, C#, Javascript?
+              Tôi có cần biết lập trình để học khoá học này?
             </div>
             <div class="answer">
-              AWS SDK hỗ trợ rất nhiều ngôn ngữ. Tuy nhiên SDK Python luôn được cập nhật mới nhất. AWS CLI được viết
-              bằng Python. Python cũng là ngôn ngữ lập trình dễ học và phổ biến nhất hiện nay.
-              <br>
-              Nếu bạn đã vững Python hoàn toàn chuyển sang các ngôn ngữ lập trình khác như Java, C#, Javascript,
-              Kotlin...
+              Bạn cần biết lập trình một ngôn ngữ bất kỳ là có thể tham gia khoá học. Nhiều bài lab thực hành được minh hoạ trên Python, Golang và Java, 3 ngôn ngữ phổ biến hay dùng trên Cloud và Web nhất
             </div>
           </div>
         </div>
@@ -1593,37 +1614,7 @@
   </div> -->
 
 
-  <!-- <div class="section" id="video">
-    <div class="display_container">
-      <div class="title">Video khóa học</div>
-      <div class="video_container"> 
-
-              <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1oJu87Fw2Pg"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/watch?v=1oJu87Fw2Pg">
-                        <div class="video_name">
-                            HƯỚNG DẪN LẬP TRÌNH GAME TETRIS
-                        </div>
-                    </a>
-                </div>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gVqWSkYjqeQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <a href="https://www.youtube.com/watch?v=gVqWSkYjqeQ">
-                        <div class="video_name">
-                            HƯỚNG DẪN LẬP TRÌNH GAME FLAPPY BIRD
-                        </div>
-                    </a>
-                </div> 
-
-      </div>
-    </div>
-  </div> -->
+  
 
 
   <div class="section menu-section" id="contact">
@@ -1693,7 +1684,7 @@
           <textarea class="inputText" id="note" placeholder="Ghi chú"></textarea>
           <div class="message"></div>
           <div class="contact_button" id="btn-register">
-            <button>Đăng ký</button>
+            <button>Đăng ký nhận tư vấn</button>
           </div>
         </div>
       </div>

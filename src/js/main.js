@@ -176,8 +176,8 @@ document.getElementById("btn-register").addEventListener("click", function (e) {
       Phone: phoneVal,
       Info: noteVal,
       Link: window.location.href,
-      ItemId: "82hNVQfP",
-      Type: 1,
+      ItemId: "nl2",
+      // Type: 1,
     };
 
     let myJSON = JSON.stringify(req);
