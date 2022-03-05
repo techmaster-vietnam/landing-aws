@@ -337,3 +337,58 @@ function showSlides(n) {
   dots[slideIndex-1].className += " slide_active";
 }
 
+function getAllPosts() {
+  $.ajax({
+    url: "https://techmaster.vn/api/class/iraLPS6c/outline",
+    method: "GET",
+    success: (result) => {
+      console.log(result)
+      if (result.length > 0) {
+        let content = "";
+        $.each(result, function (index, post) {
+          content += `
+
+                        <div class="course_content">
+                          <div class="triangle">
+                          </div>
+                          <div class="track_container">
+                            <div class="track_content">
+                              <div class="title">
+                                <span>${post.display_order} ${post.name}</span>
+                                <span class="toggle_btn">
+                                  <img src="img/up-arrow.svg">
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    `;
+        });
+
+        $(".course_content_container").html(content);
+
+        // $(".blog-slider").slick({
+        //   arrows: false,
+        //   centerMode: true,
+        //   centerPadding: "15px",
+        //   infinite: false,
+        //   initialSlide: 1,
+        //   mobileFirst: true,
+        //   focusOnSelect: true,
+        //   responsive: [
+        //     { breakpoint: 768, settings: { centerPadding: "90px" } },
+        //     {
+        //       breakpoint: 992,
+        //       settings: { centerPadding: "0px", slidesToShow: 3 },
+        //     },
+        //   ],
+        // });
+      }
+    },
+    error: (e) => {
+      console.error(e.message);
+    },
+  });
+}
+
+getAllPosts();
