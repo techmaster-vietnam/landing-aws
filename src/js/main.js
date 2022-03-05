@@ -354,7 +354,7 @@ function getAllPosts() {
                           <div class="track_container">
                             <div class="track_content">
                               <div class="title">
-                                <span>${post.display_order} ${post.name}</span>
+                                <span>${post.display_order}. ${post.name}</span>
                                 <span class="toggle_btn">
                                   <img src="img/up-arrow.svg">
                                 </span>
