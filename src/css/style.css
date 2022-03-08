@@ -819,7 +819,7 @@ a {
   border-radius: 10px;
   align-items: flex-start;
   justify-content: left;
-  min-height: 470px;
+  /* min-height: 470px; */
   margin-bottom: 40px;
 }
 
