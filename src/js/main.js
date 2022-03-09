@@ -396,6 +396,8 @@ let toggle_btn = document.querySelectorAll(".toggle_btn");
 //     }
 // })
 
+console.log(toggle_btn);
+
 toggle_btn.forEach(function(btn){
     btn.addEventListener('click', function() {
         let course_info = this.parentElement.parentElement.querySelector(".course_info");
