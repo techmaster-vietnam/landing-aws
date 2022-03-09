@@ -348,13 +348,15 @@ function getAllPosts() {
         $.each(result, function (index, post) {
           let courselist = "";
           console.log("post lecture: ", post.lectures);
-          for(let i = 0; i<post.lectures.length; i++) {
-            courselist += 
-            `
-            <li>
-              ${post.lectures[i].title}
-            </li>
-            `
+          if(post.lectures.length > 0){
+            for(let i = 0; i<post.lectures.length; i++) {
+              courselist += 
+              `
+              <li>
+                ${post.lectures[i].title}
+              </li>
+              `
+            }
           }
           console.log("courselist: ", courselist);
           
