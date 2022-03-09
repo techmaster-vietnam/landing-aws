@@ -347,14 +347,14 @@ function getAllPosts() {
         let content = "";
         $.each(result, function (index, post) {
           let courselist = "";
-          for(let i = 0; i<post.lectures.length; i++) {
-            courselist += 
-            `
-            <li>
-              ${post.lectures[i]}
-            </li>
-            `
-          }
+          // for(let i = 0; i<post.lectures.length; i++) {
+          //   courselist += 
+          //   `
+          //   <li>
+          //     ${post.lectures[i]}
+          //   </li>
+          //   `
+          // }
           content += `
                         <div class="course_content">
                           <div class="triangle">
