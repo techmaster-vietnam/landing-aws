@@ -323,7 +323,6 @@ function getAllPosts() {
         let content = "";
         $.each(result, function (index, post) {
           let courselist = "";
-          console.log("post lecture: ", post.lectures);
           if(post.lectures != null){
             for(let i = 0; i<post.lectures.length; i++) {
               courselist += 
@@ -334,7 +333,7 @@ function getAllPosts() {
               `
             }
           }
-          console.log("courselist: ", courselist);
+          // console.log("courselist: ", courselist);
           
           content += `
                         <div class="course_content">
@@ -396,7 +395,7 @@ let toggle_btn = document.querySelectorAll(".toggle_btn");
 //     }
 // })
 
-console.log(toggle_btn);
+console.log("toggle_btn ", toggle_btn);
 
 toggle_btn.forEach(function(btn){
     btn.addEventListener('click', function() {
