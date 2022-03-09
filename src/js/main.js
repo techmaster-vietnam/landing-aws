@@ -347,6 +347,7 @@ function getAllPosts() {
         let content = "";
         $.each(result, function (index, post) {
           let courselist = "";
+          console.log("post lecture: ", post.lectures);
           // for(let i = 0; i<post.lectures.length; i++) {
           //   courselist += 
           //   `
