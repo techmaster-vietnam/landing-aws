@@ -352,7 +352,7 @@ function getAllPosts() {
             courselist += 
             `
             <li>
-              ${post.lectures[i]}
+              ${post.lectures[i].title}
             </li>
             `
           }
@@ -372,7 +372,7 @@ function getAllPosts() {
                               </div>
                               <div class="list course_info" style="display:none">
                               <ul>
-                                
+                              ${courselist}
                               </ul>
                             </div>
                             </div>
