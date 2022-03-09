@@ -346,8 +346,16 @@ function getAllPosts() {
       if (result.length > 0) {
         let content = "";
         $.each(result, function (index, post) {
+          let courselist = "";
+          for(let i = 0; i<post.lectures.length; i++) {
+            courselist += 
+            `
+            <li>
+              ${post.lectures[i]}
+            </li>
+            `
+          }
           content += `
-
                         <div class="course_content">
                           <div class="triangle">
                           </div>
@@ -359,6 +367,11 @@ function getAllPosts() {
                                   <img src="img/up-arrow.svg">
                                 </span>
                               </div>
+                              <div class="list course_info" style="display:none">
+                              <ul>
+                                ${courselist}
+                              </ul>
+                            </div>
                             </div>
                           </div>
                         </div>

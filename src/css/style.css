@@ -704,7 +704,7 @@ a {
 .display_container .course_content_container .course_content .track_container .track_content .title img{
   cursor: pointer;
   width: 10px;
-  display: none;
+  /* display: none; */
 }
 
 .display_container .course_content_container .course_content .track_container .track_content .list{
