@@ -52,30 +52,6 @@ closebar.onclick = function () {
   }, 200);
 };
 
-let toggle_btn = document.querySelectorAll(".toggle_btn");
-
-// toggle_btn.forEach(function(btn){
-//     toggle_btn.onclick = function(){
-//         console.log("hello");
-//     }
-// })
-
-toggle_btn.forEach(function(btn){
-    btn.addEventListener('click', function() {
-        let course_info = this.parentElement.parentElement.querySelector(".course_info");
-        if(course_info.style.display == "block"){
-            course_info.style.display = "none";
-            this.querySelector("img").src = "img/down-arrow.svg"
-            
-        }
-        else if(course_info.style.display == "none"){
-            course_info.style.display = "block";
-            console.log(this.src);
-            this.querySelector("img").src = "img/up-arrow.svg"
-
-        }
-    })
-})
 
 
 let question_icon = document.querySelectorAll(".question_icon");
@@ -410,3 +386,29 @@ function getAllPosts() {
 }
 
 getAllPosts();
+
+
+let toggle_btn = document.querySelectorAll(".toggle_btn");
+
+// toggle_btn.forEach(function(btn){
+//     toggle_btn.onclick = function(){
+//         console.log("hello");
+//     }
+// })
+
+toggle_btn.forEach(function(btn){
+    btn.addEventListener('click', function() {
+        let course_info = this.parentElement.parentElement.querySelector(".course_info");
+        if(course_info.style.display == "block"){
+            course_info.style.display = "none";
+            this.querySelector("img").src = "img/down-arrow.svg"
+            
+        }
+        else if(course_info.style.display == "none"){
+            course_info.style.display = "block";
+            console.log(this.src);
+            this.querySelector("img").src = "img/up-arrow.svg"
+
+        }
+    })
+})
