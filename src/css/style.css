@@ -987,14 +987,14 @@ a {
 .fee_container {
   display: flex;
   justify-content: space-between;
-  max-width: 840px;
+  /* max-width: 840px; */
   width: 100%;
   flex-wrap: wrap;
 }
 
 .fee_container .fee {
   position: relative;
-  width: calc(50% - 20px);
+  width: calc(33.33% - 20px);
   min-height: 240px;
   box-sizing: border-box;
   padding: 40px 20px 40px 20px;
@@ -1084,7 +1084,7 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .fee_container .fee {
     width: 100%;
     margin-bottom: 40px;
