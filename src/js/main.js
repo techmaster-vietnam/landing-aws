@@ -359,6 +359,32 @@ function getAllPosts() {
         });
 
         $(".course_content_container").html(content);
+        let toggle_btn = document.querySelectorAll(".toggle_btn");
+
+        // toggle_btn.forEach(function(btn){
+        //     toggle_btn.onclick = function(){
+        //         console.log("hello");
+        //     }
+        // })
+
+        console.log("toggle_btn ", toggle_btn);
+
+        toggle_btn.forEach(function(btn){
+            btn.addEventListener('click', function() {
+                let course_info = this.parentElement.parentElement.querySelector(".course_info");
+                if(course_info.style.display == "block"){
+                    course_info.style.display = "none";
+                    this.querySelector("img").src = "img/down-arrow.svg"
+                    
+                }
+                else if(course_info.style.display == "none"){
+                    course_info.style.display = "block";
+                    console.log(this.src);
+                    this.querySelector("img").src = "img/up-arrow.svg"
+
+                }
+            })
+        })
 
         // $(".blog-slider").slick({
         //   arrows: false,
@@ -387,29 +413,3 @@ function getAllPosts() {
 getAllPosts();
 
 
-let toggle_btn = document.querySelectorAll(".toggle_btn");
-
-// toggle_btn.forEach(function(btn){
-//     toggle_btn.onclick = function(){
-//         console.log("hello");
-//     }
-// })
-
-console.log("toggle_btn ", toggle_btn);
-
-toggle_btn.forEach(function(btn){
-    btn.addEventListener('click', function() {
-        let course_info = this.parentElement.parentElement.querySelector(".course_info");
-        if(course_info.style.display == "block"){
-            course_info.style.display = "none";
-            this.querySelector("img").src = "img/down-arrow.svg"
-            
-        }
-        else if(course_info.style.display == "none"){
-            course_info.style.display = "block";
-            console.log(this.src);
-            this.querySelector("img").src = "img/up-arrow.svg"
-
-        }
-    })
-})
