@@ -348,7 +348,7 @@ function getAllPosts() {
         $.each(result, function (index, post) {
           let courselist = "";
           console.log("post lecture: ", post.lectures);
-          if(post.lectures.length > 0){
+          if(post.lectures != null){
             for(let i = 0; i<post.lectures.length; i++) {
               courselist += 
               `
