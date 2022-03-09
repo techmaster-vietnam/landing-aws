@@ -348,14 +348,16 @@ function getAllPosts() {
         $.each(result, function (index, post) {
           let courselist = "";
           console.log("post lecture: ", post.lectures);
-          // for(let i = 0; i<post.lectures.length; i++) {
-          //   courselist += 
-          //   `
-          //   <li>
-          //     ${post.lectures[i]}
-          //   </li>
-          //   `
-          // }
+          for(let i = 0; i<post.lectures.length; i++) {
+            courselist += 
+            `
+            <li>
+              ${post.lectures[i]}
+            </li>
+            `
+          }
+          console.log("courselist: ", courselist);
+          
           content += `
                         <div class="course_content">
                           <div class="triangle">
@@ -365,12 +367,12 @@ function getAllPosts() {
                               <div class="title">
                                 <span>Buổi ${post.display_order}: ${post.name}</span>
                                 <span class="toggle_btn">
-                                  <img src="img/up-arrow.svg">
+                                  <img src="img/down-arrow.svg">
                                 </span>
                               </div>
                               <div class="list course_info" style="display:none">
                               <ul>
-                                ${courselist}
+                                
                               </ul>
                             </div>
                             </div>
