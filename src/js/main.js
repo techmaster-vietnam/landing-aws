@@ -150,7 +150,7 @@ document.getElementById("btn-register").addEventListener("click", function (e) {
       FullName: nameVal,
       Email: emailVal,
       Phone: phoneVal,
-      Info: noteVal,
+      Note: noteVal,
       Link: window.location.href,
       ItemId: "nl2",
       // Type: 1,
