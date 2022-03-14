@@ -265,13 +265,24 @@ var allslides = document.getElementsByClassName("mySlides");
 
 for(let i = 1; i<=allslides.length; i++){
   dot_bar.innerHTML += `
-    <span class="dot" onclick="currentSlide(${i})"></span>
+    <span class="dot"></span>
   `
 }
 
+let dot = document.getElementsByClassName("dot");
+
+$.each(dot, function (index, icon) {
+  console.log("index ",  index, icon);
+  icon.addEventListener('click', function(){
+      slideIndex = index + 1;
+      console.log(slideIndex);
+      showSlides(slideIndex);
+    })
+});
+
+
+
 showSlides(slideIndex);
-
-
 
 let prev_btn = document.getElementById("prev_btn");
 
@@ -293,17 +304,15 @@ next_btn.addEventListener('click', function() {
   showSlides(slideIndex);
 })
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
+      // console.log("i m called");
       slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
@@ -359,29 +368,21 @@ function getAllPosts() {
         });
 
         $(".course_content_container").html(content);
-        let toggle_btn = document.querySelectorAll(".toggle_btn");
+        let track_content = document.querySelectorAll(".track_content");
 
-        // toggle_btn.forEach(function(btn){
-        //     toggle_btn.onclick = function(){
-        //         console.log("hello");
-        //     }
-        // })
-
-        console.log("toggle_btn ", toggle_btn);
-
-        toggle_btn.forEach(function(btn){
+        track_content.forEach(function(btn){
             btn.addEventListener('click', function() {
-                let course_info = this.parentElement.parentElement.querySelector(".course_info");
+                let course_info = this.querySelector(".course_info");
                 if(course_info.style.display == "block"){
                     course_info.style.display = "none";
-                    this.querySelector("img").src = "img/down-arrow.svg"
+                    this.querySelector("toggle_btn").src = "img/down-arrow.svg"
                     
                 }
                 else if(course_info.style.display == "none"){
                     course_info.style.display = "block";
                     console.log(this.src);
-                    this.querySelector("img").src = "img/up-arrow.svg"
-
+                    this.querySelector("toggle_btn").src = "img/up-arrow.svg"
+        
                 }
             })
         })

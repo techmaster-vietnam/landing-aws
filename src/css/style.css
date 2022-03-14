@@ -683,6 +683,7 @@ a {
   width: 100%;
   box-sizing: border-box;
   padding: 20px 40px 0px 40px;
+  cursor: pointer;
   /* padding-bottom: 20px; */
 }
 
@@ -884,12 +885,12 @@ a {
   color: #Ff9a00;
 }
 
-.teacher_container .teacher .teacher_name a {
+/* .teacher_container .teacher:hover .teacher_name {
   color: #Ff9a00;
   transition: 00.5s;
-}
+} */
 
-.teacher_container .teacher .teacher_name a:hover{
+.teacher_container .teacher:hover .teacher_name {
   color:#1644b8;
   transition: 00.5s;
 }
@@ -900,6 +901,7 @@ a {
   font-size: 16px;
   text-align: center;
   line-height: 2.3rem;
+  color: #000;
 }
 
 .teacher_container .teacher .teacher_details ul{
@@ -912,6 +914,7 @@ a {
   font-size: 16px;
   text-align: left;
   line-height: 2.3rem;
+  color: #000;
 }
 
 @media (max-width: 1024px) and (min-width: 641px) {
