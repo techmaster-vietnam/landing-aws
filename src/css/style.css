@@ -565,6 +565,10 @@ a {
   width: 100%;
 }
 
+.learner .section_container .learner_banner .banner_img iframe{
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .section {
     margin: 2rem 0;
