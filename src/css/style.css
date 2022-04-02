@@ -1033,7 +1033,7 @@ a {
   min-height: 470px;
 }
 
-.fee_container .fee img {
+.fee_container .fee .icon {
   position: absolute;
   width: 50px;
   z-index: 2;
