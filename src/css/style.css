@@ -1380,7 +1380,7 @@ a {
 .contact_container {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   margin-top: 20px;
   flex-wrap: wrap;
 }
