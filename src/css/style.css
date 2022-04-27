@@ -1011,7 +1011,7 @@ a {
 
 .fee_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   /* max-width: 840px; */
   width: 100%;
   flex-wrap: wrap;
@@ -1019,10 +1019,11 @@ a {
 
 .fee_container .fee {
   position: relative;
-  width: calc(33.33% - 20px);
+  width: calc(35% - 40px);
   min-height: 240px;
   box-sizing: border-box;
   padding: 40px 20px 40px 20px;
+  margin: 0 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 15px rgb(2 3 3 / 10%);
   box-shadow: 0 0 15px rgb(2 3 3 / 10%);
