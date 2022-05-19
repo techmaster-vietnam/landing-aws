@@ -1019,7 +1019,7 @@ a {
 
 .fee_container .fee {
   position: relative;
-  width: calc(35% - 40px);
+  width: calc(33% - 40px);
   min-height: 240px;
   box-sizing: border-box;
   padding: 40px 20px 40px 20px;
