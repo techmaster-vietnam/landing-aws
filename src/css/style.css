@@ -1046,7 +1046,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   box-sizing: border-box;
   padding: 0px 0px;
   height: 100%;
