@@ -10,7 +10,16 @@ html {
 a {
   text-decoration: none;
 }
-
+.toast:not(.showing):not(.show) {
+  opacity: 1;
+}
+.toast {
+  background-color: #fff;
+}
+.toast-header {
+  background-color: orange;
+  color: #fff;
+}
 .header {
   background-color: #052575;
   background-image: url("../../src/img/background_new.png");
