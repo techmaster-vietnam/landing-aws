@@ -16,6 +16,9 @@ a {
 .toast {
   background-color: #fff;
 }
+.toast-container {
+  right: -400px;
+}
 .toast-header {
   background-color: orange;
   color: #fff;

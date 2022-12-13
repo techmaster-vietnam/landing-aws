@@ -3192,9 +3192,13 @@ function getAllPosts() {
 }
 
 getAllPosts();
-function showToast() {
+function hideToast() {
   $(".btn-close-toast").on("click", function () {
     $("#liveToast").css("display", "none");
   });
+}
+hideToast();
+function showToast() {
+  $(".toast-container").css("right", "0").css("transition", "1s ease");
 }
 showToast();
