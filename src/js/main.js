@@ -3202,3 +3202,9 @@ function showToast() {
   $(".toast-container").css("right", "0").css("transition", "1s ease");
 }
 showToast();
+function showQuestion() {
+  $(".question_item").on("click", function (e) {
+    $(e.target.closest(".question_item")).find(".answer").fadeToggle();
+  });
+}
+showQuestion();
