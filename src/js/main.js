@@ -3194,12 +3194,46 @@ function getAllPosts() {
 getAllPosts();
 function hideToast() {
   $(".btn-close-toast").on("click", function () {
-    $("#liveToast").css("display", "none");
+    $("#liveToast1").css("display", "none");
+    $("#liveToast2").css("display", "none");
+    clearInterval(showToast()[1]);
+    clearInterval(showToast()[0]);
   });
 }
 hideToast();
+function showToast1() {
+  $(".toast-container1")
+    .css("opacity", "1")
+    .css("right", "0")
+    .css("transition", "2s ease");
+  $(".toast-container2")
+    .css("opacity", "0")
+    .css("right", "-400px")
+    .css("transition", "2s ease");
+}
+function showToast2() {
+  $(".toast-container2")
+    .css("opacity", "1")
+    .css("right", "0")
+    .css("transition", "2s ease");
+
+  $(".toast-container1")
+    .css("opacity", "0")
+    .css("right", "-400px")
+    .css("transition", "1s ease");
+}
 function showToast() {
-  $(".toast-container").css("right", "0").css("transition", "1s ease");
+  showToast1();
+  let id = setTimeout(function () {
+    showToast2();
+  }, 8000);
+  let id1 = setInterval(() => {
+    showToast1();
+    setTimeout(function () {
+      showToast2();
+    }, 10000);
+  }, 20000);
+  return [id, id1];
 }
 showToast();
 function showQuestion() {

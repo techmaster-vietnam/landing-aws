@@ -24,6 +24,7 @@ a {
 }
 .toast-container {
   right: -400px;
+  opacity: 0;
 }
 .toast-header {
   background-color: orange;
@@ -1821,6 +1822,9 @@ body.preventScroll {
   width: 100%;
 }
 
+.toast-body {
+  min-height: 108px;
+}
 .blog_container .blog .content {
   width: 100%;
   box-sizing: border-box;
