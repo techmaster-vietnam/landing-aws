@@ -80,8 +80,6 @@ question_icon.forEach(function (btn) {
   });
 });
 
-console.log(question_icon);
-
 question_icon.forEach(function (btn) {
   question_icon.onclick = function () {
     console.log("hi");
