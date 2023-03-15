@@ -10,28 +10,35 @@ html {
 a {
   text-decoration: none;
 }
+
 .toast:not(.showing):not(.show) {
   opacity: 1;
 }
+
 .answer {
   display: none;
 }
+
 .question_item {
   cursor: pointer;
 }
+
 .toast {
   background-color: #fff;
 }
+
 .toast-container {
   right: -400px;
   opacity: 0;
   bottom: 50% !important;
   transform: translateY(50%);
 }
+
 .toast-header {
   background-color: orange;
   color: #fff;
 }
+
 .header {
   background-color: #052575;
   background-image: url("../../src/img/background_new.png");
@@ -172,6 +179,7 @@ a {
 .nav-bar .link_list .icon {
   padding: 20px 0px 0px 0px;
 }
+
 .nav-bar .link_list a img {
   width: 18px;
   box-sizing: border-box;
@@ -273,6 +281,7 @@ a {
     visibility: inherit;
     display: block;
   }
+
   .header .nav_bar .nav_bar_container .nav_menu {
     display: none;
   }
@@ -283,6 +292,7 @@ a {
     width: 100%;
     margin-bottom: 20px;
   }
+
   .header .content .image {
     width: 100%;
     padding-bottom: 40px;
@@ -373,6 +383,7 @@ a {
   .benefit .benefit_container {
     width: 65%;
   }
+
   .benefit .benefit_container .benefit_content {
     width: calc(50% - 30px);
     margin-bottom: 40px;
@@ -383,6 +394,7 @@ a {
   .benefit .benefit_container {
     width: 75%;
   }
+
   .benefit .benefit_container .benefit_content {
     width: calc(100% - 30px);
     margin-bottom: 40px;
@@ -698,11 +710,7 @@ a {
   flex-wrap: wrap;
 }
 
-.display_container
-  .course_content_container
-  .course_content
-  .track_container
-  .track_content {
+.display_container .course_content_container .course_content .track_container .track_content {
   width: 100%;
   box-sizing: border-box;
   padding: 20px 40px 0px 40px;
@@ -710,12 +718,7 @@ a {
   /* padding-bottom: 20px; */
 }
 
-.display_container
-  .course_content_container
-  .course_content
-  .track_container
-  .track_content
-  .title {
+.display_container .course_content_container .course_content .track_container .track_content .title {
   /* text-transform: uppercase; */
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -728,34 +731,17 @@ a {
   justify-content: space-between;
 }
 
-.display_container
-  .course_content_container
-  .course_content
-  .track_container
-  .track_content
-  .title
-  img {
+.display_container .course_content_container .course_content .track_container .track_content .title img {
   cursor: pointer;
   width: 10px;
   /* display: none; */
 }
 
-.display_container
-  .course_content_container
-  .course_content
-  .track_container
-  .track_content
-  .list {
+.display_container .course_content_container .course_content .track_container .track_content .list {
   display: block;
 }
 
-.display_container
-  .course_content_container
-  .course_content
-  .track_container
-  .track_content
-  .list
-  li {
+.display_container .course_content_container .course_content .track_container .track_content .list li {
   font-family: Open Sans, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -763,11 +749,7 @@ a {
   line-height: 2.3rem;
 }
 
-.display_container
-  .course_content_container
-  .course_content
-  .track_container
-  .track_image {
+.display_container .course_content_container .course_content .track_container .track_image {
   width: 0%;
   display: flex;
   justify-content: center;
@@ -781,29 +763,15 @@ a {
 }
 
 @media (max-width: 768px) {
-  .display_container
-    .course_content_container
-    .course_content
-    .track_container
-    .track_content
-    .list
-    li {
+  .display_container .course_content_container .course_content .track_container .track_content .list li {
     font-size: 16px;
   }
 
-  .display_container
-    .course_content_container
-    .course_content
-    .track_container
-    .track_content {
+  .display_container .course_content_container .course_content .track_container .track_content {
     width: 100%;
   }
 
-  .display_container
-    .course_content_container
-    .course_content
-    .track_container
-    .track_image {
+  .display_container .course_content_container .course_content .track_container .track_image {
     display: none;
   }
 }
@@ -820,21 +788,11 @@ a {
     margin-left: 0;
   }
 
-  .display_container
-    .course_content_container
-    .course_content
-    .track_container
-    .track_content {
+  .display_container .course_content_container .course_content .track_container .track_content {
     padding: 20px;
   }
 
-  .display_container
-    .course_content_container
-    .course_content
-    .track_container
-    .track_content
-    .list
-    ul {
+  .display_container .course_content_container .course_content .track_container .track_content .list ul {
     padding-left: 20px;
   }
 }
@@ -898,7 +856,7 @@ a {
   cursor: zoom-in;
 }
 
-.click-zoom input[type="checkbox"]:checked ~ img {
+.click-zoom input[type="checkbox"]:checked~img {
   transform: scale(2);
   cursor: zoom-out;
 }
@@ -918,6 +876,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .teacher_container .teacher .cert_img img {
   width: 80%;
 }
@@ -1024,6 +983,7 @@ a {
 .infographic_container .image {
   width: 70%;
 }
+
 .infographic_container .image img {
   width: 100%;
 }
@@ -1086,7 +1046,7 @@ a {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0px 0px;
+  padding: 0px 10px;
   height: 100%;
 }
 
@@ -1238,9 +1198,11 @@ a {
   box-sizing: border-box;
   padding: 40px 0px;
 }
-.question_container .toggle_btn > img {
+
+.question_container .toggle_btn>img {
   width: 10px;
 }
+
 .question_item {
   display: flex;
   background-color: #fff;
@@ -1253,13 +1215,16 @@ a {
   padding: 20px 30px;
   margin: 0 0 12px 0;
 }
+
 .question_item:hover .question {
   color: #ff9a00;
 }
+
 .question {
   display: flex;
   justify-content: space-between;
 }
+
 .question_item .content {
   width: calc(100% - 0px);
   box-sizing: border-box;
@@ -1337,6 +1302,7 @@ a {
   #product {
     margin-top: 4rem;
   }
+
   .product_container .product {
     padding: 10px;
   }
@@ -1770,6 +1736,7 @@ body.preventScroll {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -1779,6 +1746,7 @@ body.preventScroll {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -1786,6 +1754,7 @@ body.preventScroll {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+
   .prev,
   .next,
   .text {
@@ -1831,12 +1800,15 @@ body.preventScroll {
   top: 0;
   width: 100%;
 }
+
 .toast {
   width: 150px;
 }
+
 .toast-body {
   min-height: 108px;
 }
+
 .blog_container .blog .content {
   width: 100%;
   box-sizing: border-box;
