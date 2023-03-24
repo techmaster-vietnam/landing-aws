@@ -1072,6 +1072,10 @@ a {
   color: #ff9a00;
 }
 
+.fee_container .fee .fee_content .fee_number s {
+  font-size: 20px;
+}
+
 .fee_container .fee .fee_content .fee_number .session {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
