@@ -3162,7 +3162,9 @@ function showToast() {
   }, 20000);
   return [id, id1];
 }
-showToast();
+
+// Tắt thông báo ưu đãi (showToast)
+// showToast();
 function showQuestion() {
   $(".question_item").on("click", function (e) {
     $(e.target.closest(".question_item")).find(".answer").fadeToggle();
