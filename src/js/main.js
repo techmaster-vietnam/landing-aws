@@ -1546,9 +1546,7 @@ const data1 = [
       },
     ],
   },
-];
 
-const data2 = [
   {
     name: "Cognitor: quản lý tài khoản người dùng",
     group_name: "AWS Advanced",
@@ -5169,209 +5167,100 @@ const dataAws = [
 ];
 
 function getAllPosts() {
-  // https://techmaster.vn/api/class/iraLPS6c/outline
-  // $.ajax({
-  //   // url: "https://techmaster.vn/api/class/iraLPS6c/outline",
-  //   url: dataAws,
-  //   method: "GET",
-  //   success: (result) => {
-  //     console.log(result)
-  //     if (result.length > 0) {
-  //       let content = "";
-  //       $.each(result, function (index, post) {
-  //         let courselist = "";
-  //         if(post.lectures != null){
-  //           for(let i = 0; i<post.lectures.length; i++) {
-  //             courselist +=
-  //             `
-  //             <li>
-  //               ${post.lectures[i].title}
-  //             </li>
-  //             `
-  //           }
-  //         }
-  //         // console.log("courselist: ", courselist);
+  $.ajax({
+    url: "https://techmaster.vn/api/class/kUZjW387/outline?type=group",
+    // url: dataAws,
+    method: "GET",
+    success: (result) => {
+      if (result.length > 0) {
+        let groupContent = "";
+        const groups = [];
+        result?.forEach((lesson, i) => {
+          const groupIndex = groups.findIndex(
+            (group) => group.name === lesson.group_name
+          );
 
-  //         content += `
-  //                       <div class="course_content">
-  //                         <div class="triangle">
-  //                         </div>
-  //                         <div class="track_container">
-  //                           <div class="track_content">
-  //                             <div class="title">
-  //                               <span>Buổi ${post.display_order}: ${post.name}</span>
-  //                               <span class="toggle_btn">
-  //                                 <img src="img/down-arrow.svg">
-  //                               </span>
-  //                             </div>
-  //                             <div class="list course_info" style="display:none">
-  //                             <ul>
-  //                             ${courselist}
-  //                             </ul>
-  //                           </div>
-  //                           </div>
-  //                         </div>
-  //                       </div>
-  //                   `;
-  //       });
+          if (groupIndex !== -1) {
+            groups[groupIndex].lessons.push(lesson);
+          } else {
+            groups.push({ id: i, name: lesson.group_name, lessons: [lesson] });
+          }
+        });
 
-  //       $(".course_content_container").html(content);
-  //       let track_content = document.querySelectorAll(".track_content");
+        // if (result.length > 0) {
+        let indexLesson = 0;
+        groups.forEach((item, index) => {
+          let content = "";
+          $.each(item.lessons, function (index, item) {
+            let courselist = "";
+            if (item.lectures != null) {
+              for (let i = 0; i < item.lectures.length; i++) {
+                courselist += `
+                  <li>
+                    ${item.lectures[i].title}
+                  </li>
+                  `;
+              }
+            }
+            ++indexLesson;
+            content += `
+                            <div class="course_content">
+                              <div class="triangle">
+                              </div>
+                              <div class="track_container">
+                                <div class="track_content">
+                                  <div class="title">
+                                    <span>Buổi ${indexLesson}: ${item.name}</span>
+                                    <span class="toggle_btn">
+                                      <img src="img/down-arrow.svg">
+                                    </span>
+                                  </div>
+                                  <div class="list course_info" style="display:none">
+                                  <ul>
+                                  ${courselist}
+                                  </ul>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        `;
+          });
 
-  //       track_content.forEach(function(btn){
-  //           btn.addEventListener('click', function() {
-  //               let course_info = this.querySelector(".course_info");
-  //               if(course_info.style.display == "block"){
-  //                   course_info.style.display = "none";
-  //                   this.querySelector("toggle_btn").src = "img/down-arrow.svg"
+          groupContent += `  <h2 id="module-item"  style="margin-top: 48px;">Phần ${
+            index + 1
+          } : ${item.name}</h2>
+            <div class="course_content_container" id="course_content_container1">
+            ${content}
+            </div>
+            
+            `;
+        });
 
-  //               }
-  //               else if(course_info.style.display == "none"){
-  //                   course_info.style.display = "block";
-  //                   console.log(this.src);
-  //                   this.querySelector("toggle_btn").src = "img/up-arrow.svg"
-
-  //               }
-  //           })
-  //       })
-
-  //       // $(".blog-slider").slick({
-  //       //   arrows: false,
-  //       //   centerMode: true,
-  //       //   centerPadding: "15px",
-  //       //   infinite: false,
-  //       //   initialSlide: 1,
-  //       //   mobileFirst: true,
-  //       //   focusOnSelect: true,
-  //       //   responsive: [
-  //       //     { breakpoint: 768, settings: { centerPadding: "90px" } },
-  //       //     {
-  //       //       breakpoint: 992,
-  //       //       settings: { centerPadding: "0px", slidesToShow: 3 },
-  //       //     },
-  //       //   ],
-  //       // });
-  //     }
-  //   },
-  //   error: (e) => {
-  //     console.error(e.message);
-  //   },
-  // });
-  const result = data1;
-  const result2 = data2;
-
-  if (result.length > 0) {
-    let content = "";
-    let content1 = "";
-    $.each(result, function (index, post) {
-      let courselist = "";
-      if (post.lectures != null) {
-        for (let i = 0; i < post.lectures.length; i++) {
-          courselist += `
-          <li>
-            ${post.lectures[i].title}
-          </li>
-          `;
-        }
+        $("#module-container").html(groupContent);
       }
-      // console.log("courselist: ", courselist);
-      // <span>Buổi ${post.display_order}: ${post.name}</span>
+    },
+    error: (e) => {
+      console.error(e.message);
+    },
+  });
 
-      content += `
-                    <div class="course_content">
-                      <div class="triangle">
-                      </div>
-                      <div class="track_container">
-                        <div class="track_content">
-                          <div class="title">
-                            <span>Buổi ${index + 1}: ${post.name}</span>
-                            <span class="toggle_btn">
-                              <img src="img/down-arrow.svg">
-                            </span>
-                          </div>
-                          <div class="list course_info" style="display:none">
-                          <ul>
-                          ${courselist}
-                          </ul>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                `;
-    });
-    $.each(result2, function (index, post) {
-      let courselist = "";
-      if (post.lectures != null) {
-        for (let i = 0; i < post.lectures.length; i++) {
-          courselist += `
-          <li>
-            ${post.lectures[i].title}
-          </li>
-          `;
-        }
+  let track_content = document.querySelectorAll(".track_content");
+
+  track_content.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      let course_info = this.querySelector(".course_info");
+      if (course_info.style.display == "block") {
+        course_info.style.display = "none";
+        this.querySelector("toggle_btn").src = "img/down-arrow.svg";
+      } else if (course_info.style.display == "none") {
+        course_info.style.display = "block";
+        console.log(this.src);
+        this.querySelector("toggle_btn").src = "img/up-arrow.svg";
       }
-      // console.log("courselist: ", courselist);
-      // <span>Buổi ${post.display_order}: ${post.name}</span>
-
-      content1 += `
-                    <div class="course_content">
-                      <div class="triangle">
-                      </div>
-                      <div class="track_container">
-                        <div class="track_content">
-                          <div class="title">
-                            <span>Buổi ${index + 16}: ${post.name}</span>
-                            <span class="toggle_btn">
-                              <img src="img/down-arrow.svg">
-                            </span>
-                          </div>
-                          <div class="list course_info" style="display:none">
-                          <ul>
-                          ${courselist}
-                          </ul>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                `;
     });
-
-    $("#course_content_container1").html(content);
-    $("#course_content_container2").html(content1);
-    let track_content = document.querySelectorAll(".track_content");
-
-    track_content.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        let course_info = this.querySelector(".course_info");
-        if (course_info.style.display == "block") {
-          course_info.style.display = "none";
-          this.querySelector("toggle_btn").src = "img/down-arrow.svg";
-        } else if (course_info.style.display == "none") {
-          course_info.style.display = "block";
-          console.log(this.src);
-          this.querySelector("toggle_btn").src = "img/up-arrow.svg";
-        }
-      });
-    });
-
-    // $(".blog-slider").slick({
-    //   arrows: false,
-    //   centerMode: true,
-    //   centerPadding: "15px",
-    //   infinite: false,
-    //   initialSlide: 1,
-    //   mobileFirst: true,
-    //   focusOnSelect: true,
-    //   responsive: [
-    //     { breakpoint: 768, settings: { centerPadding: "90px" } },
-    //     {
-    //       breakpoint: 992,
-    //       settings: { centerPadding: "0px", slidesToShow: 3 },
-    //     },
-    //   ],
-    // });
-  }
+  });
 }
+// }
 
 getAllPosts();
 function hideToast() {
