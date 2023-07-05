@@ -3094,27 +3094,26 @@ function getAllPosts() {
         });
 
         $("#module-container").html(groupContent);
+        let track_content = document.querySelectorAll(".track_content");
+
+        track_content.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            let course_info = this.querySelector(".course_info");
+            if (course_info.style.display == "block") {
+              course_info.style.display = "none";
+              this.querySelector("toggle_btn").src = "img/down-arrow.svg";
+            } else if (course_info.style.display == "none") {
+              course_info.style.display = "block";
+              console.log(this.src);
+              this.querySelector("toggle_btn").src = "img/up-arrow.svg";
+            }
+          });
+        });
       }
     },
     error: (e) => {
       console.error(e.message);
     },
-  });
-
-  let track_content = document.querySelectorAll(".track_content");
-
-  track_content.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      let course_info = this.querySelector(".course_info");
-      if (course_info.style.display == "block") {
-        course_info.style.display = "none";
-        this.querySelector("toggle_btn").src = "img/down-arrow.svg";
-      } else if (course_info.style.display == "none") {
-        course_info.style.display = "block";
-        console.log(this.src);
-        this.querySelector("toggle_btn").src = "img/up-arrow.svg";
-      }
-    });
   });
 }
 // }
