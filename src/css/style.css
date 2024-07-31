@@ -1913,6 +1913,7 @@ body.preventScroll {
 /* CTA zalo */
 /* Contact Button zalo */
 #call__to-zalo {
+  position: relative;
 }
 
 /* Button zalo */
@@ -1945,13 +1946,15 @@ body.preventScroll {
 }
 
 #call__to-zalo .content__zalo {
-  margin-block: 50px;
+  width: 100%;
+  height: fit-content;
   max-width: 450px;
   padding: 50px;
   border-radius: 20px;
-  margin-inline: auto;
   background: #fff;
-  position: relative;
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #call__to-zalo .content__zalo h5,
