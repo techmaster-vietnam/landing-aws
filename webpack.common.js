@@ -17,6 +17,22 @@ module.exports = {
       import: "./src/js/main.js",
       filename: "js/main.[contenthash].js",
     },
+    youtubeLazy: {
+      import: "./src/js/youtubeLazy.js",
+      filename: "js/youtubeLazy.[contenthash].js",
+    },
+    question: {
+      import: "./src/js/question.js",
+      filename: "js/question.[contenthash].js",
+    },
+    formValidate: {
+      import: "./src/js/formValidate.js",
+      filename: "js/formValidate.[contenthash].js",
+    },
+    navbar: {
+      import: "./src/js/navbar.js",
+      filename: "js/navbar.[contenthash].js",
+    },
   },
   output: {
     filename: "resources/js/bundle.[contenthash].js",
@@ -28,7 +44,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       inject: "body",
-      chunks: ["bootstrapSCSSEntry", "bootstrapJSEntry", "main"],
+      chunks: [
+        "bootstrapSCSSEntry",
+        "bootstrapJSEntry",
+        "main",
+        "youtubeLazy",
+        "question",
+        "formValidate",
+        "navbar",
+      ],
       filename: "index.html",
     }),
     new MiniCssExtractPlugin({
