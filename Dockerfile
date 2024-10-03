@@ -1,4 +1,4 @@
-FROM node:latest as build-stage
+FROM node:22-alpine3.20 AS build-stage
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ RUN yarn run build
 
 # Stage 2
 
-FROM nginx:alpine as production-stage
+FROM nginx:stable-alpine-slim as production-stage
 
 RUN mkdir /app
 

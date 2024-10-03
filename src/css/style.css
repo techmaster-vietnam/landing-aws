@@ -44,7 +44,6 @@ a {
   background-image: url("../../src/img/background_new.png");
   background-size: cover;
   box-sizing: border-box;
-  /* padding-bottom: 50px; */
 }
 
 .header .nav_bar {
