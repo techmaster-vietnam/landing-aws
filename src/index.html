@@ -106,17 +106,17 @@
 		<div class="content">
 			<div class="content_container">
 				<div class="image">
-					<picture>
-						<source data-srcset="img/banner_cloud.webp" media="(min-width: 1366px)" />
-						<source data-srcset="img/banner_cloud.webp" media="(max-width: 1365px)" />
-						<img width="255" height="293" data-src="img/banner_cloud.webp" alt="amazon web service" class="lazyload lazyload-img" loading="lazy" />
+					<picture class="img-banner">
+						<link rel="preload" href="img/banner_cloud.webp" as="image" type="image/webp">
+						<source srcset="img/banner_cloud.webp" media="(max-width: 640px)" type="image/webp">
+						<source srcset="img/banner_cloud.webp" type="image/webp">
+						<img width="255" height="293" src="img/banner_cloud.webp" alt="amazon web service" loading="lazy" class="lazyload lazyload-img">
 					</picture>
 				</div>
 				<div class="banner">
 					<img width="255" height="183" class="lazyload lazyload-img" data-src="img/banner-aws.svg" alt="banner" loading="lazy" />
 					<div class="description">
 						<ul>
-
 							<li class="text">
 								Nội dung học bao gồm 2 chứng chỉ Solution Architect và
 								Developer, bao quát các dịch vụ AWS đang được ứng dụng rộng
@@ -1154,7 +1154,7 @@
 						<div class="thumbnail">
 							<img src="https://media.techmaster.vn/api/static/brbgh4451coepbqoch60/NN2MwAyg"
 								alt="Quiz luyện thi chứng chỉ AWS chủ đề ElastiCache (P1)"
-								onerror="this.onerror=null;this.src='/resources/image/thumbnail.webp'" />
+								onerror="this.onerror=null;this.src='/resources/image/thumbnail.webp'"/>
 						</div>
 						<div class="content">
 							<div class="title">
@@ -1278,7 +1278,7 @@
 <script data-src="src/js/navbar.js" defer></script>
 <script data-src="src/js/question.js" defer></script>
 
-<script>
+<script defer>
 	document.addEventListener("DOMContentLoaded", function() {
 		const scripts = document.querySelectorAll('script[data-src]');
 	
